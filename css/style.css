@@ -1,20 +1,37 @@
+:root {
+  --background-color: #E0E1DD;
+  --alt-background-color: #B1B1B1; 
+  --light-blue: #778DA9;
+  --mid-blue: #415A77;
+  --dark-blue: #1B263B;
+  --darker-blue: #0D1B2A;
+}
+
 body{
-  background-color: black;
-}
-h1{
-  color: white;
-}
-
-p{
-  background-color: gray;
-  color: white;
+  background-color: var(--background-color);
+  color: var(--mid-blue);
+  margin: 0px;
 }
 
-a{
-  color:lightblue;
+#bottom-bar{
+  background-color: var(--alt-background-color);
+  height: 50px;
+  width: 100%;
+  margin: 0px;
+  position: fixed;
+  bottom: 0px;
 }
 
-#projets_titre{
-  background-color:tomato;
-  color:blue;
+.bottom-text{
+  color: var(--dark-blue);
+  font-family: "poppins";
+  font-weight:300;
+  font-size: 20px;
+  position: relative;
+  float: left;
+  margin-left: 20px;
+  margin-right: 50px;
+  margin-top: 10px;
+  margin-bottom: 0px;
 }
+
