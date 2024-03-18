@@ -3,6 +3,7 @@
 :root {
   --background-color: #E0E1DD;
   --alt-background-color: #B1B1B1; 
+  --lightest-blue: #C0D0E5;
   --light-blue: #778DA9;
   --mid-blue: #415A77;
   --dark-blue: #1B263B;
@@ -22,65 +23,209 @@ a:visited{
   color:var(--mid-blue)
 }
 
+h1{
+  font-family: "poppins";
+  font-weight: 500;
+  font-size: 220%;
+  letter-spacing: 3px;
+}
+
 h2{
   font-family: "poppins";
   font-weight: 500;
-  font-size: 30px;
+  font-size: 170%;
   display:block;
   position:static;
-  text-align: center;
   letter-spacing: -1px;
-  margin-right: 20%;
-  margin-left: 20%;
+}
+
+h3{
+  font-family: "poppins";
+  font-weight: 500;
+  font-size: 150%;
+  display:block;
+  position:static;
+  letter-spacing: -1px;
+}
+
+#header{
+  background-color:var(--lightest-blue);
+  padding-top:3%;
+  padding-bottom:0.5%;
+  margin-bottom: 6%;
+  text-align: center;
+  position:relative;
 }
 
 #top-logo{
   display:block;
-  width: 50%;
-  margin-top: 30px;
-  margin-bottom: 75px;
+  width: 45%;
+  margin-bottom: 4%;
   margin-left: auto;
   margin-right: auto;
 }
 
+#main-description{
+  margin-left:20%;
+  margin-right:20%;
+}
+
+.wave{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(123% + 1.3px);
+    height: 201px;
+}
+
+.wave .shape-fill {
+    fill: var(--lightest-blue);
+}
+
+
 #content{
   display: block;
   position: static;
-  margin-top: 5px;
+  margin-top: 1%;
   margin-left: auto;
   margin-right:auto;
-  padding: 40px;
-  width:85%;
-  height:3000px;
+  width:65%;
+  height:2000px;
 }
 
 .main-content{
   display:block;
-  position:inherit;
-  background-color: var(--dark-blue);
-  height: 47%;
+  position:relative;
+  height: 50%;
+  padding-left: 10%;
+  padding-right:10%;
   margin-bottom: 5%;
+  padding-top: 4%
+}
+
+.main-content img{
+  object-fit: cover;
+  position: relative;
+  max-width:100%;
+  max-height: 100%;
+  border-radius: 2%;
+}
+
+.jeux-boxes{
+  position:relative;
+  height: 60%;
+  max-width:100%;
+  max-height: 100%;
+  margin-bottom: 2%;
+}
+
+.jeux-boxes :hover{
+  background-color: rgba(0, 0, 0, 0.65);
+  .overlay-text {
+    transform: translateY(-10%);
+    background-color: rgba(0, 0, 0, 0);
+  }
+  .overlay-text h3{
+    opacity: 1;
+  }
+}
+
+.overlay{
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(0,0,0,0.25);
+  border-radius: 2%;
+  width: 100%;
+  height: 100%;
+  transition: background-color 0.25s ease-out;
+}
+
+.overlay-text{
+  width: 90%;
+  height:50%;
+  background-color: rgba(0, 0, 0, 0);
+  position:absolute;
+  text-align: left;
+  bottom:0;
+  transform: translateY(65%);
+  transition: transform 0.25s ease;
+}
+
+.overlay-text h2{
+  color: white;
+  font-size: 350%;
+  margin: 0px;
+  margin-left:2%;
+  margin-bottom: 1%;
+  transition: all 0.25s ease-out;
+}
+
+.overlay-text h3{
+  color: white;
+  opacity: 0;
+  margin: 0px;
+  margin-left:2%;
+  margin-right: 30%;
+  margin-bottom: 1%;
+  transition: all 0.25s ease;
+}
+
+#a-suivre{
+  height:25%;
+  font-size: 80%;
+  position: relative;
+  #a-suivre-text{
+    position: relative;
+    margin-left: 5%;
+    text-align: center;
+  }
+  h2{ 
+    text-align: center;
+    color: white;
+    font-size: 350%;
+    margin: 0px;
+    margin-top: 7%;
+    margin-left:2%;
+    margin-bottom: 2%;
+  }
+  h3{
+    top: 30%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
 }
 
 #bottom-bar{
   background-color: var(--alt-background-color);
-  height: 50px;
+  height: 4%;
   width: 100%;
   margin: 0px;
   position: fixed;
+  left: 0px;
   bottom: 0px;
 }
 
 .bottom-text{
   color: var(--dark-blue);
   font-family: "poppins";
-  font-weight:300;
-  font-size: 20px;
+  font-weight:350;
+  font-size: 18px;
   position: relative;
   float: left;
-  margin-left: 20px;
-  margin-right: 50px;
-  margin-top: 10px;
-  margin-bottom: 0px;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 0.33%;
 }
+
+.underline{
+  text-decoration: underline;
+}
+
 
