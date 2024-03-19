@@ -77,6 +77,7 @@ h3{
     overflow: hidden;
     line-height: 0;
 }
+
 .wave svg {
     position: relative;
     display: block;
@@ -95,8 +96,11 @@ h3{
   margin-top: 1%;
   margin-left: auto;
   margin-right:auto;
-  width:65%;
+  width:85%;
   height:2000px;
+  h1{
+    margin-left: 5%;
+  }
 }
 
 .main-content{
@@ -119,8 +123,10 @@ h3{
 
 .jeux-boxes{
   position:relative;
+  margin-left: auto;
+  margin-right:auto;
   height: 60%;
-  max-width:100%;
+  max-width:90%;
   max-height: 100%;
   margin-bottom: 2%;
 }
@@ -202,6 +208,35 @@ h3{
   }
 }
 
+#membres{
+  margin-top: 7%;
+  display: flex;
+  align-items: flex-start; 
+  flex-direction: row; 
+  flex-wrap: wrap; 
+  position:relative;
+  width:100%;
+  height: 80%;
+  justify-content: space-around;
+}
+
+.membre{
+  position: relative;
+  width: 32%;
+  height: 45%;
+  img{
+    max-width:50%;
+    max-height: 50%;
+    min-width: 50%;
+    min-height: 50%;
+    margin-left: 20%;
+    margin-right: auto;
+  }
+  h3{
+    text-align: center;
+  }
+}
+
 #bottom-bar{
   background-color: var(--alt-background-color);
   height: 4%;
@@ -228,4 +263,7 @@ h3{
   text-decoration: underline;
 }
 
+.unhoverable{
+  pointer-events: none;
+}
 
