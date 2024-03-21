@@ -26,7 +26,8 @@ a:visited{
 h1{
   font-family: "poppins";
   font-weight: 500;
-  font-size: 220%;
+  font-size: 250%;
+  font-size: 1.75vw;
   letter-spacing: 3px;
 }
 
@@ -34,6 +35,7 @@ h2{
   font-family: "poppins";
   font-weight: 500;
   font-size: 170%;
+  font-size: 1.5vw;
   display:block;
   position:static;
   letter-spacing: -1px;
@@ -43,6 +45,7 @@ h3{
   font-family: "poppins";
   font-weight: 500;
   font-size: 150%;
+  font-size: 1vw;
   display:block;
   position:static;
   letter-spacing: -1px;
@@ -82,7 +85,7 @@ h3{
     position: relative;
     display: block;
     width: calc(123% + 1.3px);
-    height: 201px;
+    height: 100%;
 }
 
 .wave .shape-fill {
@@ -97,7 +100,7 @@ h3{
   margin-left: auto;
   margin-right:auto;
   width:85%;
-  height:2000px;
+  height:auto;
   h1{
     margin-left: 5%;
   }
@@ -116,8 +119,9 @@ h3{
 .main-content img{
   object-fit: cover;
   position: relative;
+  width: 100%;
   max-width:100%;
-  max-height: 100%;
+  height: auto;
   border-radius: 2%;
 }
 
@@ -134,7 +138,7 @@ h3{
 .jeux-boxes :hover{
   background-color: rgba(0, 0, 0, 0.65);
   .overlay-text {
-    transform: translateY(-10%);
+    transform: translateY(0%);
     background-color: rgba(0, 0, 0, 0);
   }
   .overlay-text h3{
@@ -154,8 +158,8 @@ h3{
 }
 
 .overlay-text{
-  width: 90%;
-  height:50%;
+  width: 50%;
+  height:auto;
   background-color: rgba(0, 0, 0, 0);
   position:absolute;
   text-align: left;
@@ -166,7 +170,6 @@ h3{
 
 .overlay-text h2{
   color: white;
-  font-size: 350%;
   margin: 0px;
   margin-left:2%;
   margin-bottom: 1%;
@@ -251,7 +254,7 @@ h3{
   color: var(--dark-blue);
   font-family: "poppins";
   font-weight:350;
-  font-size: 18px;
+  font-size:1vw;
   position: relative;
   float: left;
   margin-left: 2%;
